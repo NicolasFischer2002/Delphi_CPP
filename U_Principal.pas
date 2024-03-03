@@ -31,7 +31,7 @@ Criar um projeto do tipo Biblioteca de vínculo dinâmico com exportações(DLL)
 NOME_DA_DLL.cpp
 
 - Atenção à arquitetura do projeto Delphi
-Se o projeto Delphi for x86, a dll precisa ser x86, portanto o método precisa]
+Se o projeto Delphi for x86, a dll precisa ser x86, portanto o método precisa
 ser escrito desta forma:
 
 extern "C" __declspec(dllexport) const char* ObterMensagem() {
@@ -40,14 +40,14 @@ extern "C" __declspec(dllexport) const char* ObterMensagem() {
 
 {
 
-- Compilar e recompilar em x86 dentro do Visual Studio
+- Compilar e recompilar - em x86 se for o caso - dentro do Visual Studio
 
 - Se for utilizar a dll x86, pegar desta pasta do projeto da dll, Visual Studio:
 ~\NOME_SEU_PROJETO_DLL\DEBUG\NOME_SEU_PROJETO.dll
 
 - Adicionar essa dll na mesma pasta do exe Delphi
 
-- Exemplo de chamada de uma função C++ dentro da dll:
+- Exemplo de chamada de uma função C++ dentro da dll, no Delphi:
 function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
 
 }

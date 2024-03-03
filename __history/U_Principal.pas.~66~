@@ -39,14 +39,19 @@ extern "C" __declspec(dllexport) const char* ObterMensagem() {
 }
 
 {
+
 - Compilar e recompilar em x86 dentro do Visual Studio
+
+- Se for utilizar a dll x86, pegar desta pasta do projeto da dll, Visual Studio:
+~\NOME_SEU_PROJETO_DLL\DEBUG\NOME_SEU_PROJETO.dll
+
+- Adicionar essa dll na mesma pasta do exe Delphi
+
+- Exemplo de chamada de uma função C++ dentro da dll:
+function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
+
 }
 
-// Compilar e recompilar em x86
-// Pegar esta dll: C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\CPPDLL\Debug
-// caso o projeto Delphi seja x86 pegar da pasta acima
-// E adicionar na pasta do exe Delphi
-// Adicionar está chamada abaixo para localizar a função
 function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
 
 implementation
