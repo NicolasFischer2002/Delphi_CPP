@@ -1,0 +1,22 @@
+object F_Principal: TF_Principal
+  Left = 0
+  Top = 0
+  ClientHeight = 212
+  ClientWidth = 338
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  TextHeight = 15
+  object Btn_acao: TButton
+    Left = 80
+    Top = 67
+    Width = 179
+    Height = 65
+    Caption = 'A'#231#227'o'
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,76 @@
+unit U_Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TF_Principal = class(TForm)
+    Btn_acao: TButton;
+    procedure Btn_acaoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  F_Principal: TF_Principal;
+
+
+{
+
+=> Como criar uma DLL em C++ para ser utilizada dentro do Delphi
+
+- Visual Studio:
+Criar um projeto do tipo Biblioteca de vínculo dinâmico com exportações(DLL)
+
+- Coloque seus métodos C++ em:
+NOME_DA_DLL.cpp
+
+- Atenção à arquitetura do projeto Delphi
+Se o projeto Delphi for x86, a dll precisa ser x86, portanto o método precisa]
+ser escrito desta forma:
+
+extern "C" __declspec(dllexport) const char* ObterMensagem() {
+    return "Deu certo! minha dll x86 em C++ foi lida dentro do meu App Delphi";
+}
+
+{
+
+- Compilar e recompilar em x86 dentro do Visual Studio
+
+- Se for utilizar a dll x86, pegar desta pasta do projeto da dll, Visual Studio:
+~\NOME_SEU_PROJETO_DLL\DEBUG\NOME_SEU_PROJETO.dll
+
+- Adicionar essa dll na mesma pasta do exe Delphi
+
+- Exemplo de chamada de uma função C++ dentro da dll:
+function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
+
+}
+
+function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
+
+implementation
+
+{$R *.dfm}
+
+procedure TF_Principal.Btn_acaoClick(Sender: TObject);
+begin
+     Try
+        Try
+           ShowMessage(ObterMensagem);
+        Except
+           on Erro : Exception do
+           ShowMessage('Erro inesperado: ' + Erro.Message);
+        End;
+
+     Finally
+
+     End;
+end;
+
+end.
