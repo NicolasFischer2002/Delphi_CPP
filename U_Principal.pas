@@ -52,7 +52,8 @@ function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
 
 }
 
-function ObterMensagem: PAnsiChar; stdcall; external 'CPPDLL.dll';
+function ObterMensagem32Bits: PAnsiChar; stdcall; external 'CPPDLL.dll';
+function ObterMensagem64Bits: PAnsiChar; stdcall; external 'CPPDLL.dll';
 
 implementation
 
@@ -62,7 +63,8 @@ procedure TF_Principal.Btn_acaoClick(Sender: TObject);
 begin
      Try
         Try
-           ShowMessage(ObterMensagem);
+           ShowMessage(ObterMensagem32Bits);
+           ShowMessage(ObterMensagem64Bits);
         Except
            on Erro : Exception do
            ShowMessage('Erro inesperado: ' + Erro.Message);

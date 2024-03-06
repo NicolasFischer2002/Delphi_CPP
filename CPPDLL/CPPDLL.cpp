@@ -15,8 +15,16 @@ CPPDLL_API int fnCPPDLL(void)
     return 0;
 }
 
-// Para arquitetura x86
-extern "C" __declspec(dllexport) const char* ObterMensagem() {
+
+// Ambas as funções ObterMensagem32Bits e ObterMensagem64Bits funcionam no Delphi, desde que:
+// Se o Delphi estiver compilado em x86, a DLL deve ser compilada em x86 e colocada em x86
+// na mesma pasta do exe Delphi; Caso o Delphi esteja compilado em 64bits, a DLL precisa ser
+// compilada em 64 bits e deve estar na mesma pasta do exe Delphi.
+extern "C" __declspec(dllexport) const char* ObterMensagem64Bits() {
+    return "Deu certo! minha dll 64bits em C++ foi lida dentro do meu App Delphi";
+}
+
+extern "C" __declspec(dllexport) const char* ObterMensagem32Bits() {
     return "Deu certo! minha dll x86 em C++ foi lida dentro do meu App Delphi";
 }
 

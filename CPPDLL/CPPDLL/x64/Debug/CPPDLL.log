@@ -1,6 +1,2 @@
-﻿  pch.cpp
-  CPPDLL.cpp
-  dllmain.cpp
-  Gerando Código...
-     Criando biblioteca C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\CPPDLL\x64\Debug\CPPDLL.lib e objeto C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\CPPDLL\x64\Debug\CPPDLL.exp
-  CPPDLL.vcxproj -> C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\CPPDLL\x64\Debug\CPPDLL.dll
+﻿  CPPDLL.cpp
+  CPPDLL.vcxproj -> C:\Desenvolvimento\Delphi\Delphi_CPP\CPPDLL\x64\Debug\CPPDLL.dll

@@ -10,7 +10,9 @@ object F_Principal: TF_Principal
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OldCreateOrder = True
   Position = poScreenCenter
+  PixelsPerInch = 96
   TextHeight = 15
   object Btn_acao: TButton
     Left = 80
