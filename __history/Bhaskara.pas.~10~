@@ -1,0 +1,23 @@
+unit Bhaskara;
+
+interface
+
+type
+  TBhaskara = class
+  private
+    FCoefA, FCoefB, FCoefC: Double;
+  public
+    constructor Create(a, b, c: Double);
+  end;
+
+implementation
+
+constructor TBhaskara.Create(a, b, c: Double);
+begin
+     // Representam os coeficiêntes da equação
+     FCoefA := a; // Representa o coeficiente “a” na equação
+     FCoefB := b; // Representa o coeficiente “b” na mesma equação.
+     FCoefC := c;
+end;
+
+end.

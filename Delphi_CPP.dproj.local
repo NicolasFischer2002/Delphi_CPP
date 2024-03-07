@@ -2,8 +2,10 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2024/03/03 12:30:30.000.736,=C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2024/03/03 12:31:23.000.681,C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\U_Principal.dfm</Transaction>
-    <Transaction>2024/03/03 12:31:23.000.681,C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\U_Principal.pas</Transaction>
-    <Transaction>2024/03/03 12:31:30.000.487,C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\Delphi_CPP.dproj</Transaction>
+    <Transaction>2024/03/03 12:31:23.000.681,C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\U_Principal.dfm=C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/03/03 12:31:23.000.681,C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\U_Principal.pas=C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/03 12:31:30.000.487,C:\Desenvolvimento\GitHub\Delphi\Delphi_CPP\Delphi_CPP.dproj=C:\Users\Micro\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/03/07 08:48:12.713,=C:\Desenvolvimento\Delphi\Delphi_CPP\Unit1.pas</Transaction>
+    <Transaction>2024/03/07 08:48:43.093,C:\Desenvolvimento\Delphi\Delphi_CPP\Bhaskara.pas=C:\Desenvolvimento\Delphi\Delphi_CPP\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>
